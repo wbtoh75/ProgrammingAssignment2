@@ -5,14 +5,14 @@
 ## and a list containing a function to
 ## set value of the matrix, get value of the matrix, 
 ## set value of inverse of the matrix, get value of inverse of the matrix
-makeCacheMatrix <- function(ma = matrix()){
+makeCacheMatrix <- function(x = matrix()){
   i <- NULL
   set <- function(y){
-    ma <<- y
+    x <<- y
     i <<- NULL
   }
   get <- function(){
-    ma
+    x
   }
   setInverse <- function(inverse){
     i <<- inverse
